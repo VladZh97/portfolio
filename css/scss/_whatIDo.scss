@@ -1,0 +1,116 @@
+.what {
+  position: relative;
+
+      &::before {
+      content: url('../img/item8.png');
+      position: absolute;
+      top: 0;
+      right: -170px;
+      z-index: -10;
+      opacity: .7;
+    }
+
+    &::after {
+      content: url('../img/what.png');
+      position: absolute;
+      top: 100px;
+      left: -20px;
+      z-index: -10;
+    }
+
+  .what_i_do__menu {
+    position: absolute;
+    top: 220px;
+    right: -30px;
+    font-size: 20px;
+    transform: rotate(90deg);
+    font-family: $fontFamily;
+    color: $textColor;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 110%;
+      left: 0;
+      width: 4em;
+      height: 5px;
+      background-color: $grayColor;
+    }
+  }
+
+  .what_i_do {
+    position: relative;
+    padding-top: 120px;
+    display: flex;
+
+    .what_i_do__text {
+      margin-left: 20px;
+      margin-right: 50px;
+      position: relative;
+
+      .what_i_do__text--title {
+        font-family: $fontFamily;
+        font-size: 23px;
+        color: $textColor;
+      }
+
+      .what_i_do__text--des {
+        margin-top: 45px;
+        color: $textColor;
+        font-size: 15px;
+        font-family: $fontFamily;
+        line-height: 1.5;
+        transform: translateY(50px);
+        opacity: (0);
+        transition: all .6s ease-in-out;
+      }
+
+      .what_i_do__text--des.anim {
+        transform: translateY(0);
+        opacity: (1);
+      }
+    }
+  }
+
+
+}
+
+// GALLERY
+.gal {
+  padding-top: 45px;
+  margin-bottom: 30px;
+
+  .gallery {
+
+    .gallery-cell {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      width: 66%;
+      height: 20em;
+      margin-right: 30px;
+      background-color: #fff;
+      box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+      border: 1px solid $textColor;
+      border-radius: 10px;
+
+      h3 {
+        font-size: 25px;
+        font-family: $fontFamily;
+        color: #707070;
+      }
+
+      i {
+        font-size: 80px;
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.gal__two {
+  display: none;
+}

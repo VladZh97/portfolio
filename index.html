@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='icon' href='img/favicon.ico' type='image/x-icon' />
+
+  <title>Vlad Zhovklyi | Portfolio</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Raleway:wght@200;500;600&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+
+
+  <!-- CAROUSEL STYLE -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+  <!-- SCROLL ANIMATION -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- MENU -->
+    <div class="menu--container">
+      <nav class="menu main_menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#what">What I Do?</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <footer class="footer">
+        <div class="contact_icons">
+          <a href="https://www.facebook.com/vlad.zhovkliy/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/in/vladyslav-zhovklyi-a71ab91b3/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/VladZh97" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.instagram.com/v.zhovklyi/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- MAIN HOME -->
+    <header class="header" id="home">
+      <div class="container">
+
+        <!-- <div class="main"> -->
+
+        <!-- MENU BURGER -->
+        <div class="burger">
+          <span></span>
+        </div>
+        <div class="container__inner">
+          <div class="text">
+            <div class="main">
+              <div class="title anim-item no-anim" id="title">
+                <h1>Vlad <br>
+                  Zhovklyi</h1>
+              </div>
+
+              <div class="subtitle anim-item no-anim">
+                <p>#Front End Developer</p>
+              </div>
+            </div>
+
+            <div class="cv">
+              <button class="download"><a
+                  href="https://drive.google.com/uc?export=download&id=1DfQe6ryGFkWIdCFR27W_BCbcegPA9yp8">Download
+                  CV</a></button>
+            </div>
+          </div>
+
+          <div class="image"></div>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="about__main">
+        <div class="about__text">
+          <h2 class="about__text--title">Who I Am?</h2>
+          <p class="about__text--des text--des anim-item">My name is Vlad. I am 22 years old FrontEnd Developer from
+            Cracow. I graduated from the Academy of Music and it helps me think creatively and look gor non-standart
+            solution. I learn Front End by commiting daily practice, watching tutorials and reading books. I love my
+            job, that's why I do my best to show all skills I have.</p>
+        </div>
+      </div>
+      <div class="about__img">
+        <img src="img/notebook-1.png" alt="">
+      </div>
+
+      <div class="about__menu">
+        <h3>About me</h3>
+      </div>
+    </section>
+
+
+
+
+    <!-- WHAT I DO SECTION -->
+    <section class="what" id="what">
+      <div class="what_i_do__menu">
+        <h3>What I Do</h3>
+      </div>
+      <div class="what_i_do">
+        <div class="what_i_do__text">
+          <h2 class="what_i_do__text--title">What I Do?</h2>
+          <p class="what_i_do__text--des text--des anim-item">I enjoy building websites. Designing user interfaces and
+            creating user experience. Also, as a musician, I love to give a nice mood through my work. I like music,
+            sport and reading books.</p>
+        </div>
+      </div>
+
+      <!-- Flickity HTML init -->
+      <div class="gal">
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell">
+            <h3>Web Code</h3>
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="gallery-cell">
+            <h3>UI Design</h3>
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <div class="gallery-cell">
+            <h3>Problem solving</h3>
+            <i class="far fa-question-circle"></i>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- big -->
+      <div class="gal__two">
+        <div class="gallery">
+          <div class="gallery-cell gal anim-item">
+            <h3>Web Code</h3>
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="gallery-cell gal anim-item">
+            <h3>UI/UX Design</h3>
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <div class="gallery-cell gal anim-item">
+            <h3>Problem solving</h3>
+            <i class="far fa-question-circle"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+      <!-- ABOUT SECTION -->
+      <div class="skills__text">
+        <h2 class="skills__text--title">Skills</h2>
+        <p class="skills__text--des text--des anim-item">Every day I practice, read, watch tutorials to gain and develop
+          my skills. It helps me build new projects.</p>
+      </div>
+
+      <!-- SKILLS LIST -->
+      <div class="skills__list">
+        <div class="skills__list--item">
+          <h3>Technologies</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SCSS(LESS)</li>
+            <li>JavaScript (ES6)</li>
+            <li>React (Redux)</li>
+            <li>GIT</li>
+            <li>NPM</li>
+            <li>Bootstrap4</li>
+          </ul>
+        </div>
+        <div class="skills__list--item">
+          <h3>Other skills</h3>
+          <ul>
+            <li>Responsive Web Design</li>
+            <li>Mobile-First</li>
+            <li>BEM</li>
+            <li>jQuery</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe XD</li>
+            <li>Figma</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills__menu">
+        <h3>Skills</h3>
+      </div>
+    </section>
+
+
+    <!-- PORTFOLIO SECTION -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__text">
+        <h2>Portfolio</h2>
+        <h3>Look at my works</h3>
+      </div>
+
+      <!-- CONTAINER FOR ALL POJECT ITEMS -->
+      <div class="portfolio__items">
+
+        <!-- POJECT ITEM -->
+        <div class="portfolio__item anim-item">
+          <div class="portfolio__item--des">
+            <h3>Calculator</h3>
+            <div class="btn">
+              <button><a href="https://vladzh97.github.io/Calc/" target="_blank">Demo</a></button>
+              <button><a href="https://github.com/VladZh97/Calc" target="_blank">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- POJECT ITEM -->
+        <div class="portfolio__item anim-item">
+          <div class="portfolio__item--des">
+            <h3>Game 'Snake'</h3>
+            <div class="btn">
+              <button><a href="https://vladzh97.github.io/JS-Snake/" target="_blank">Demo</a></button>
+              <button><a href="https://github.com/VladZh97/JS-Snake" target="_blank">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- POJECT ITEM -->
+        <div class="portfolio__item anim-item">
+          <div class="portfolio__item--des">
+            <h3>Creative template</h3>
+            <div class="btn">
+              <button><a href="https://vladzh97.github.io/Camping-template/" target="_blank">Demo</a></button>
+              <button><a href="https://github.com/VladZh97/Camping-template" target="_blank">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- POJECT ITEM -->
+        <div class="portfolio__item anim-item">
+          <div class="portfolio__item--des">
+            <h3>Breathe Practice</h3>
+            <div class="btn">
+              <button><a href="https://vladzh97.github.io/Breathe-practice/" target="_blank">Demo</a></button>
+              <button><a href="https://github.com/VladZh97/Breathe-practice" target="_blank">GitHub</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer__main" id="contact">
+      <div class="contact">
+        <h2>Contact me</h2>
+        <a href="mailto:zhovklyi.v@gmail.com">zhovklyi.v@gmail.com</a>
+        <h4>Tel.<a href="tel:+48731686602">731 686 602</a></h4>
+      </div>
+
+      <div class="find">
+        <h2>Or find me on</h2>
+        <div class="icons">
+          <a href="https://www.facebook.com/vlad.zhovkliy/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/in/vladyslav-zhovklyi-a71ab91b3/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/VladZh97" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.instagram.com/v.zhovklyi/?hl=ru" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+          Made and designed by Vlad Zhovklyi &copy;2020
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- CAROUSEL JS -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+    <!-- MAIN JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</div>
+
+</html>

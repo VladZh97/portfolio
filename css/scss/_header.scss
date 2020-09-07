@@ -1,0 +1,150 @@
+.header {
+  height: 100vh;
+  font-family: $fontFamily;
+  color: #303030;
+  position: relative;
+
+  &::before {
+    content: url("../img/item7.png");
+    position: absolute;
+    top: 25%;
+    right: -5px;
+    z-index: -3;
+  }
+
+  .container {
+    margin: 0 20px;
+
+    // BURGER MENU
+    .burger {
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 33px;
+      height: 18px;
+      cursor: pointer;
+      z-index: 200;
+
+      span {
+        position: absolute;
+        left: 0;
+        top: calc(50% - 1.5px);
+        width: 60%;
+        height: 2px;
+        border-radius: 2em;
+        background-color: #000;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 2em;
+        background-color: #000;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        top: calc(100% - 1.5px);
+      }
+    }
+
+    .burger.active {
+      &::before {
+        transform: rotate(45deg);
+        top: 10px;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        top: 10px;
+      }
+
+      span {
+        left: -30%;
+        opacity: 0;
+      }
+    }
+
+    .container__inner {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .text {
+        .title {
+          padding-top: 10px;
+          max-width: 252px;
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        .subtitle {
+          padding-top: 10px;
+          font-size: 18px;
+          transform: translateY(20px);
+          opacity: 0;
+          transition: all 0.3s ease-in-out 1s;
+        }
+
+        .subtitle.anim {
+          transform: translateY(0);
+          opacity: 1;
+        }
+
+        .cv {
+          padding-top: 15px;
+          cursor: pointer;
+
+          .download {
+            font-size: 30px;
+            background-color: transparent;
+            padding: 7px 7px;
+            border: 1.5px solid $textColor;
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 6px;
+              right: 6px;
+              height: 100%;
+              width: 100%;
+              background-color: $mainColor;
+              z-index: -1;
+              transition: all 0.2s ease-in-out;
+            }
+
+            &:hover::before {
+              top: -6px;
+              right: -6px;
+            }
+
+            a {
+              text-decoration: none;
+              color: $textColor;
+            }
+          }
+        }
+      }
+
+      .image {
+        background-image: url("../img/mainImg.jpg");
+        min-height: 60vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+  }
+}
